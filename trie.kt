@@ -99,7 +99,7 @@ class Trie {
             if (child.value.endOfWord)
                words.add(nstr)
                
-            else if (child.value.children.isNotEmpty())
+            if (child.value.children.isNotEmpty())
             	words(child.value.children, nstr, words)
         }
     }
